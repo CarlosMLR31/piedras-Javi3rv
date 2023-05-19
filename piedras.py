@@ -1,7 +1,14 @@
 import random 
 import os
+
+
+# Piedras Aleatorias entre 12 y 20
 piedras = random.randint(12, 20)
+
+#Contador de Turnos
 turno = 1
+
+#Funcion de Tirar Piedras
 def pedirPiedras():
     while True:
         try:
@@ -13,6 +20,7 @@ def pedirPiedras():
         except ValueError:
             print("No introdujiste un numero valido")
 
+# Borrar contenido de la Consola de Comandos
 while True:
     os.system("cls")
     print(" -----------------------")
